@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Weather App Container -->
+    <div class="weather-container">
+        <h1>Weather App</h1>
+        
+        <!-- City Input and Search Button -->
+        <input type="text" id="location" placeholder="Enter a city" autocomplete="off">
+        <button onclick="getWeather()">Search</button>
+        
+        <!-- Celsius/Fahrenheit Toggle -->
+        <div class="temp-toggle">
+            <label>
+                <input type="radio" name="temp" id="celsius" checked>
+                Celsius (°C)
+            </label>
+            <label>
+                <input type="radio" name="temp" id="fahrenheit">
+                Fahrenheit (°F)
+            </label>
+        </div>
+
+        <!-- Weather Details -->
+        <div id="weather-result" class="weather-result">
+            <!-- The weather details will be shown here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
